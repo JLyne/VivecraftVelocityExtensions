@@ -1,11 +1,2 @@
-.classpath
-.project
-.settings
-target
-deps
-.directory
-.gradle
-.idea
-*.iml
-out
-build
+/.gradle/
+/build/

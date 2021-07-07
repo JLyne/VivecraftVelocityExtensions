@@ -1,18 +1,52 @@
-// Apply the java plugin to add support for Java
-apply plugin: 'java'
+import org.apache.tools.ant.filters.ReplaceTokens
 
-// In this section you declare where to find the dependencies of your project
-repositories {
-	// Use 'jcenter' for resolving your dependencies.
-	// You can declare any Maven/Ivy/file repository here.
-	jcenter()
-	mavenCentral()
-	maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+plugins {
+    id 'java'
+    id 'maven-publish'
 }
 
-version = '1.1'
+repositories {
+    mavenLocal()
+    mavenCentral()
 
-// In this section you declare the dependencies for your production and test code
+    maven { url 'https://repo.velocitypowered.com/snapshots/' }
+}
+
 dependencies {
-	compile "net.md-5:bungeecord-api:1.15-SNAPSHOT"
+    compileOnly 'com.velocitypowered:velocity-api:3.0.0-SNAPSHOT'
+}
+
+group = 'uk.co.notnull'
+version = '1.1'
+description = 'Vivecraft velocity extensions'
+
+java.sourceCompatibility = JavaVersion.VERSION_11
+java.targetCompatibility = JavaVersion.VERSION_11
+
+tasks {
+    processResources {
+        from("${project.rootDir}/src/main/resources") {
+            duplicatesStrategy = DuplicatesStrategy.INCLUDE
+            project.properties.findAll().each {
+                prop ->
+                    if (prop.value != null && prop.value instanceof java.lang.String) {
+                        filter(ReplaceTokens, tokens: [(prop.key): prop.value])
+                        filter(ReplaceTokens, tokens: [('project.' + prop.key): prop.value])
+                    }
+            }
+        }
+    }
+
+    compileJava {
+        options.compilerArgs += ["-Xlint:all", "-Xlint:-processing"]
+        options.encoding = 'UTF-8'
+    }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from(components.java)
+        }
+    }
 }
