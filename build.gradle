@@ -5,6 +5,13 @@ plugins {
     id 'maven-publish'
 }
 
+rootProject.ext.mavenUserName=""
+rootProject.ext.mavenPassword=""
+
+if (file("./build.gradle.local").exists()) {
+    apply from: "./build.gradle.local"
+}
+
 repositories {
     mavenLocal()
     mavenCentral()
@@ -17,7 +24,7 @@ dependencies {
 }
 
 group = 'uk.co.notnull'
-version = '1.1'
+version = '1.2-SNAPSHOT'
 description = 'Vivecraft velocity extensions'
 
 java.sourceCompatibility = JavaVersion.VERSION_11
@@ -45,8 +52,43 @@ tasks {
 
 publishing {
     publications {
-        maven(MavenPublication) {
-            from(components.java)
+        mavenJava(MavenPublication) {
+            from components.java
+            pom {
+                name = 'VivecraftVelocityExtensions'
+                description = 'Velocity support plugin for Vivecraft Spigot Extensions'
+                url = 'https://github.com/JLyne/VivecraftVelocityExtensions'
+                developers {
+                    developer {
+                        id = 'jim'
+                        name = 'James Lyne'
+                    }
+                    developer {
+                        id = 'techjar'
+                        name = 'Techjar'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/JLyne/VivecraftVelocityExtensions.git'
+                    developerConnection = 'scm:git:ssh://github.com/JLyne/VivecraftVelocityExtensions.git'
+                    url = 'https://github.com/JLyne/VivecraftVelocityExtensions'
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            credentials {
+                username = project.ext.mavenUserName
+                password = project.ext.mavenPassword
+            }
+            authentication {
+                basic(BasicAuthentication)
+            }
+
+            def releasesRepoUrl = "https://repo.not-null.co.uk/releases/" // gradle -Prelease publish
+            def snapshotsRepoUrl = "https://repo.not-null.co.uk/snapshots/"
+            url = project.hasProperty('release') ? releasesRepoUrl : snapshotsRepoUrl
         }
     }
 }
