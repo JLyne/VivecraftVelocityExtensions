@@ -4,7 +4,6 @@ import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.connection.DisconnectEvent;
 import com.velocitypowered.api.event.connection.PluginMessageEvent;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
-import com.velocitypowered.api.plugin.Plugin;
 import com.velocitypowered.api.proxy.Player;
 import com.velocitypowered.api.proxy.ProxyServer;
 import com.velocitypowered.api.proxy.ServerConnection;
@@ -22,7 +21,6 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.logging.Logger;
 
-@Plugin(id="vivecraft-velocity-extensions", name="Vivecraft Velocity Extensions")
 public class VVE {
 	public static final ChannelIdentifier CHANNEL = MinecraftChannelIdentifier.create("vivecraft", "data");
 	private final ProxyServer proxy;
@@ -54,8 +52,7 @@ public class VVE {
 			return;
 		}
 
-		if(event.getTarget() instanceof Player) {
-			Player player = (Player) event.getTarget();
+		if(event.getTarget() instanceof Player player) {
 			player.sendPluginMessage(channel, event.getData());
 		} else if (event.getSource() instanceof Player) {
 			byte[] data = event.getData();

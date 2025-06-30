@@ -1,8 +1,8 @@
 {
   "id": "vivecraft-velocity-extensions",
   "name": "Vivecraft Velocity Extensions",
-  "version": "@project.version@",
-  "authors": ["Jim (NotKatuen)"],
+  "version": "${version}",
+  "authors": ["Jim (AnEnragedPigeon)"],
   "dependencies": [],
   "main": "com.techjar.vbe.VVE"
 }
