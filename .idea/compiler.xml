@@ -5,9 +5,9 @@
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.velocitypowered/velocity-api/4.1.2-SNAPSHOT/5d0f5283478f7f8b9f08fd02b37a9cd865cebfcb/velocity-api-4.1.2-SNAPSHOT.jar" />
+          <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.velocitypowered/velocity-api/4.2.0/75b701cc958eacfe433a939211cae225d3437b70/velocity-api-4.2.0.jar" />
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.google.inject/guice/7.0.0/ccc518677b9367d45f99dfa592c9b039f07687d3/guice-7.0.0.jar" />
-          <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.6.0-jre/c376b13067cc99a5774403530953f7b05a91e218/guava-33.6.0-jre.jar" />
+          <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.7.1-jre/77e37866fb969b4ff6710faaefd3a86067730ada/guava-33.7.1-jre.jar" />
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.github.ben-manes.caffeine/caffeine/3.2.4/c63b303adf59c733d2a96125ad6670e938a2c15d/caffeine-3.2.4.jar" />
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-logger-slf4j/5.2.0/efddd8e1faa2edae2d948b5d10be1a8f35c817a/adventure-text-logger-slf4j-5.2.0.jar" />
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-minimessage/5.2.0/8435e812c70784ba7ccbd46210dccbcc576a18d5/adventure-text-minimessage-5.2.0.jar" />
@@ -23,13 +23,13 @@
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.moandjiezana.toml/toml4j/0.7.2/a03337911d0bd2c40932aca3946edb30d0e7d0c/toml4j-0.7.2.jar" />
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-gson/4.2.0/8bc56bc3d77e45b66324be9dbf1fc688bf528969/configurate-gson-4.2.0.jar" />
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.14.0/efc0e34ede4e3204eaefb84a00e55e8c86634382/gson-2.14.0.jar" />
-          <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.6/2bc14918a2f8d5414749ab12d0c590cd3198b8c1/snakeyaml-2.6.jar" />
-          <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.18/78a9e7a37cd6360e0b818e86341b24123d28d4df/slf4j-api-2.0.18.jar" />
-          <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/4.2.1/3682819352501a44fd79ccdfc0c54c6f80b3656d/checker-qual-4.2.1.jar" />
+          <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.7/47713fda569f07641538ff7f2fa9cb3ead4603e5/snakeyaml-2.7.jar" />
+          <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.19/efad9817997b3a6ce9e058f92e612917a744c290/slf4j-api-2.0.19.jar" />
+          <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/4.2.3/d2a10af5c8574adfe24f5e35ff56cca92af2e916/checker-qual-4.2.3.jar" />
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.velocitypowered/velocity-brigadier/1.0.0-SNAPSHOT/c85456381b9942f529995996793190c091ef57a9/velocity-brigadier-1.0.0-SNAPSHOT.jar" />
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-hocon/4.2.0/de6f890d9b7eaf2e8bb68866dd19c1d719835/configurate-hocon-4.2.0.jar" />
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-yaml/4.2.0/a61bc2dcbce867a3909529bd02c8224cbabbe7c1/configurate-yaml-4.2.0.jar" />
-          <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.49.0/8b42a2e3865f6e0576da3fad51dbb96732ff0f14/error_prone_annotations-2.49.0.jar" />
+          <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.50.0/74ba43e49ab1184d41634af2ef0047e82c4064b0/error_prone_annotations-2.50.0.jar" />
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.3/aeaffd00d57023a2c947393ed251f0354f0985fc/failureaccess-1.0.3.jar" />
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" />
           <entry name="$USER_HOME$/.local/share/gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/3.1/a892ca9507839bbdb900d64310ac98256cab992f/j2objc-annotations-3.1.jar" />
